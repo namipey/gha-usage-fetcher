@@ -1,7 +1,7 @@
 {
   "name": "gha-usage-fetcher",
   "description": "GitHub Action for fetching GitHub Action's usage.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "kynefuk",
   "private": true,
   "homepage": "https://github.com/namipey/gha-usage-fetcher",
