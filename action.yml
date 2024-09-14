@@ -1,5 +1,5 @@
-name: 'gha-cost-retriever'
-description: 'GitHub Actions Cost Retriever'
+name: 'gha-usage-fetcher'
+description: 'GitHub Actions Usage Fetcher'
 author: 'kynefuk'
 
 # Add your action's branding here. This will appear on the GitHub Marketplace.
