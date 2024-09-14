@@ -1,0 +1,50 @@
+name: 'gha-cost-retriever'
+description: 'GitHub Actions Cost Retriever'
+author: 'kynefuk'
+
+# Add your action's branding here. This will appear on the GitHub Marketplace.
+branding:
+  icon: 'heart'
+  color: 'red'
+
+# Define your inputs here.
+inputs:
+  github_token:
+    description: 'GitHub Token'
+    required: true
+  org_name:
+    description: 'Organization Name'
+    required: true
+
+# Define your outputs here.
+outputs:
+  ubuntu_2_core_usage:
+    description: 'Ubuntu 2 core usage(min)'
+  ubuntu_2_core_cost:
+    description: 'Ubuntu 2 core cost($)'
+  ubuntu_4_core_usage:
+    description: 'Ubuntu 4 core usage(min)'
+  ubuntu_4_core_cost:
+    description: 'Ubuntu 4 core cost($)'
+  ubuntu_8_core_usage:
+    description: 'Ubuntu 8 core usage(min)'
+  ubuntu_8_core_cost:
+    description: 'Ubuntu 8 core cost($)'
+  ubuntu_16_core_usage:
+    description: 'Ubuntu 16 core usage(min)'
+  ubuntu_16_core_cost:
+    description: 'Ubuntu 16 core cost($)'
+  ubuntu_32_core_usage:
+    description: 'Ubuntu 32 core usage(min)'
+  ubuntu_32_core_cost:
+    description: 'Ubuntu 32 core cost($)'
+  ubuntu_64_core_usage:
+    description: 'Ubuntu 64 core usage(min)'
+  ubuntu_64_core_cost:
+    description: 'Ubuntu 64 core cost($)'
+  total_cost:
+    description: 'Total cost($)'
+
+runs:
+  using: node20
+  main: dist/index.js
